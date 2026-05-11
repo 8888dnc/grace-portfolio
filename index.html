@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grace Portfolio Magazine</title>
+    <meta
+      name="description"
+      content="A magazine-format creative portfolio prototype for Grace across art, architecture, installation, interiors, and image."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="reader" aria-label="Grace portfolio magazine">
+      <section class="book" id="book" tabindex="0" aria-label="Click the magazine page to turn it">
+        <article class="spread is-active cover-spread" data-title="Cover">
+          <section class="page page--cover">
+            <div class="cover-type">
+              <p>Issue 01 / Portfolio</p>
+              <div class="cover-plate">
+                <img src="assets/architecture-spread.png" alt="Architecture image detail for Grace portfolio cover" />
+              </div>
+              <span>Grace</span>
+              <small>Art / Architecture / Installation / Image</small>
+            </div>
+          </section>
+        </article>
+
+        <article class="spread" data-title="About / Resume">
+          <section class="page page--bio">
+            <div class="kicker">About</div>
+            <h2>Designing for the human senses.</h2>
+            <p>
+              Grace works across art, architecture, interiors, installation, and image, using restraint,
+              material detail, and spatial feeling to build a coherent creative practice.
+            </p>
+            <div class="bio-grid">
+              <div>
+                <h3>Focus</h3>
+                <p>Minimal spatial narratives, material studies, gallery-like interiors, image-led documentation.</p>
+              </div>
+              <div>
+                <h3>Current</h3>
+                <p>KJArch / creative portfolio in development / open to studio and collaborative work.</p>
+              </div>
+            </div>
+          </section>
+          <section class="page page--resume">
+            <div class="resume-list">
+              <div><span>01</span><strong>Architecture + interiors</strong><em>Concept, drawing, model, case study</em></div>
+              <div><span>02</span><strong>Installation</strong><em>Material, scale, body, room</em></div>
+              <div><span>03</span><strong>Art</strong><em>Objects, surfaces, image systems</em></div>
+              <div><span>04</span><strong>Images</strong><em>Analogue studies, contact sheets, documentation</em></div>
+            </div>
+            <p class="note">
+              This page is a short resume placeholder. Swap in education, selected exhibitions,
+              studios, publications, and contact details when the final content is ready.
+            </p>
+          </section>
+        </article>
+
+        <article class="spread" data-title="Contents">
+          <section class="page page--contents">
+            <div class="kicker">Contents</div>
+            <h2>Selected works</h2>
+            <nav class="contents-list" aria-label="Jump to project">
+              <button type="button" data-jump="3"><span>06</span> Threshold House <em>Architecture</em></button>
+              <button type="button" data-jump="4"><span>08</span> Soft Concrete Room <em>Installation</em></button>
+              <button type="button" data-jump="5"><span>10</span> Negative Index <em>Images</em></button>
+              <button type="button" data-jump="6"><span>12</span> Studio Notes <em>Contact</em></button>
+            </nav>
+          </section>
+          <section class="page page--thumbs">
+            <button class="thumb" type="button" data-jump="3">
+              <img src="assets/architecture-spread.png" alt="Architecture spread thumbnail" />
+              <span>Architecture</span>
+            </button>
+            <button class="thumb" type="button" data-jump="4">
+              <img src="assets/material-interior-spread.png" alt="Installation spread thumbnail" />
+              <span>Installation</span>
+            </button>
+            <button class="thumb" type="button" data-jump="5">
+              <img src="assets/film-contact-sheet.png" alt="Film contact sheet thumbnail" />
+              <span>Images</span>
+            </button>
+          </section>
+        </article>
+
+        <article class="spread" data-title="Threshold House">
+          <section class="page page--hero-crop crop-architecture-photo">
+            <img src="assets/architecture-spread.png" alt="Generated architectural portfolio spread" />
+          </section>
+          <section class="page page--scan-text">
+            <figure class="scan crop-architecture-scan">
+              <img src="assets/architecture-spread.png" alt="Architectural drawing scan detail" />
+            </figure>
+            <div class="kicker">Architecture / 2026</div>
+            <p>
+              <strong>Threshold House</strong> is a quiet architectural study organised around compression,
+              release, and a single framed opening to landscape.
+            </p>
+          </section>
+        </article>
+
+        <article class="spread" data-title="Soft Concrete Room">
+          <section class="page page--scan-text">
+            <figure class="scan crop-material-scan">
+              <img src="assets/material-interior-spread.png" alt="Material render scan detail" />
+            </figure>
+            <div class="kicker">Installation / Material Study</div>
+            <p>
+              <strong>Soft Concrete Room</strong> explores how heavy materials can feel hushed,
+              intimate, and bodily when light is narrowed and surfaces are left nearly bare.
+            </p>
+          </section>
+          <section class="page page--hero-crop crop-material-photo">
+            <img src="assets/material-interior-spread.png" alt="Generated material and concrete room spread" />
+          </section>
+        </article>
+
+        <article class="spread" data-title="Negative Index">
+          <section class="page page--film">
+            <img src="assets/film-contact-sheet.png" alt="Generated black and white film contact sheet" />
+          </section>
+          <section class="page page--project dark-page">
+            <div class="kicker">Images / Archive</div>
+            <h2>Negative Index</h2>
+            <p>
+              An image project placeholder shaped like a working archive: fragments of interiors,
+              hands, samples, and landscapes arranged as memory rather than chronology.
+            </p>
+          </section>
+        </article>
+
+        <article class="spread" data-title="Contact">
+          <section class="page page--contact">
+            <div class="kicker">Collaboration</div>
+            <h2>For studios, residencies, peers, and future projects.</h2>
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <p>Instagram / LinkedIn / KJArch address placeholder</p>
+          </section>
+          <section class="page page--end">
+            <h2>End matter</h2>
+            <p>Use this page for acknowledgements, full CV download, press links, or archive access.</p>
+          </section>
+        </article>
+      </section>
+
+      <footer class="reader__hint">Click the page, use the arrows, or press left / right.</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
